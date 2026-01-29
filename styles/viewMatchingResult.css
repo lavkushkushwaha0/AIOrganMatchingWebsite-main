@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+  }
+  
+  /* ===== CONTAINER ===== */
+  .container {
+    max-width: 1210px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
+   
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 28px;
+    /* margin-bottom: 30px;
+    color: #ff3b3b; */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff4c4c;
+  }
+  
+  /* ===== TABLE STYLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  thead {
+    background-color: #ff3b3b;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 16px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 16px;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+  }
+  
+  tbody tr:hover {
+    background-color: #2a2a2a;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      margin: 30px 15px;
+      padding: 20px;
+      overflow-x: auto;
+    }
+  
+    .container h1 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  
+    table {
+      font-size: 0.95rem;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    thead th,
+    tbody td {
+      padding: 12px;
+    }
+  
+    thead th {
+      font-size: 0.95rem;
+    }
+  
+    tbody td {
+      font-size: 0.9rem;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  
+    .nav-links a {
+      font-size: 14px;
+      margin: 0 10px;
+    }
+  
+    .logo img {
+      height: 35px;
+      width: 35px;
+    }
+  
+    .logo span {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 15px;
+      margin: 20px 10px;
+    }
+  
+    .container h1 {
+      font-size: 1.8rem;
+    }
+  
+    table {
+      font-size: 0.85rem;
+    }
+  
+    .nav-links a {
+      font-size: 13px;
+    }
+  }
+  

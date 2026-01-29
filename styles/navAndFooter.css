@@ -1,0 +1,104 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .logo span {
+    font-size: 26px;
+    color: #beb7b7;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4c4c;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff4c4c;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4c4c;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-socials a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #ff4c4c;
+  }
+  
+  .footer-copy {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  

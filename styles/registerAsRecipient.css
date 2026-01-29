@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.form-section {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.form-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff4444;
+  text-align: center;
+}
+
+.form-section p {
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form-box input,
+.form-box select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-box input::placeholder {
+  color: #aaa;
+}
+
+.btn-submit {
+  background-color: #ff3b3b;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #e03030;
+}
+
+@media screen and (max-width: 768px) {
+  .form-section {
+    margin: 50px 20px;
+    padding: 30px;
+  }
+
+  .form-section h1 {
+    font-size: 2rem;
+  }
+
+  .form-section p {
+    font-size: 0.95rem;
+  }
+
+  .form-box input,
+  .form-box select {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .btn-submit {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-section {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .form-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-box input,
+  .form-box select {
+    font-size: 0.9rem;
+  }
+
+  .btn-submit {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donor Registration - OrganMatch AI</title>
+  <link rel="stylesheet" href="../styles/registerAsDonor.css">
+  <link rel="stylesheet" href="../styles/navAndFooter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="../pages/home.html"> <img src="../assets/logo.png" alt="Organ Match Logo"></a>
+      <span>Renatox</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../pages/home.html">Home</a>
+      <a href="../pages/donorList.html">Donor</a>
+      <a href="../pages/recipientList.html">Recipient</a>
+      <a href="../pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="donor-form-container">
+    <h2>Register as a Donor</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name"  required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"  placeholder="Enter your age" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="blood">Blood Group:</label>
+      <select id="blood" name="blood" required>
+        <option value="">--Select--</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+      <label for="organ">Organ to Donate:</label>
+      <select id="organ" name="organ" required>
+        <option value="">--Select--</option>
+        <option value="Kidney">Kidney</option>
+        <option value="Liver">Liver</option>
+        <option value="Heart">Heart</option>
+        <option value="Lungs">Lungs</option>
+        <option value="Pancreas">Pancreas</option>
+        <option value="Cornea">Cornea</option>
+      </select>
+
+      <label for="contact">Contact Number:</label>
+        <input 
+        type="tel" 
+        id="contact" 
+        name="contact" 
+        maxlength="10" 
+        pattern="\d{10}" 
+        title="Please enter exactly 10 digits" 
+        placeholder="Enter your contact number"
+        required 
+      />
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <h2 class="footer-logo">Renatox OrganMatch AI</h2>
+
+      <div class="footer-socials">
+        <a href="#">Facebook</a>
+        <a href="#">X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Renatox. All rights reserved.</p>
+    </div>
+  </footer>
+
+   <script type="module" src="../scripts/createDonor.js"></script>
+
+</body>
+</html>

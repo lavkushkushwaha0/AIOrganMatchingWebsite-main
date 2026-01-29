@@ -1,0 +1,252 @@
+/* Import fonts */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden; /* ✅ Fixed this line */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.sidebar {
+  width: 100px;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px;
+  justify-content: space-between;
+}
+
+.year {
+  color: #888;
+  font-size: 0.9rem;
+  transform: rotate(-90deg);
+  margin-bottom: 20px;
+}
+
+.nav-icons .icon {
+  font-size: 1.5rem;
+  margin: 25px 0;
+  cursor: pointer;
+  color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+.nav-icons .icon:hover {
+  transform: scale(1.3);
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-content {
+  flex: 1;
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.text-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-content .highlight {
+  color: #ff4444;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-main {
+  background-color: #ff4444;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: #e03030;
+  transform: scale(1.05);
+}
+
+/* Background Organic Structure */
+.bg-organ {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  background: url('../assets/detailed-d-render-human-heart-anatomy-against-black-background-medical-illustration-cardiovascular-system-s-showcasing-352198415.webp') no-repeat center center;
+  background-size: 110% 78%;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Quotes Block Styling */
+.quote-block {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ff4444;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.15);
+  position: relative;
+  max-width: 700px;
+}
+
+.quote-block::before {
+  content: "❝";
+  font-size: 3rem;
+  color: #ff4444;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  opacity: 0.8;
+}
+
+.quote-block p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Centering Quotes Container */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .main-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .btn-main {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 0;
+  }
+
+  .quote-container {
+    padding: 0 15px;
+  }
+
+  .quote-block {
+    width: 100%;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .quote-block::before {
+    font-size: 2.5rem;
+    top: -10px;
+    left: 10px;
+  }
+
+  .quote-block p {
+    padding-left: 25px;
+    font-size: 1rem;
+  }
+
+  .bg-organ {
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    top: unset;
+    bottom: 0;
+    opacity: 0.15;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-socials {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+  }
+}

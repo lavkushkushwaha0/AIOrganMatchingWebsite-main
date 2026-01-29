@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+  font-size: 16px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ff4c4c;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff4c4c;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.donor-form-container {
+  max-width: 700px;
+  margin: 100px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
+}
+
+.donor-form-container h2 {
+  font-size: 2.5rem;
+  color: #ff4444;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.donor-form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.donor-form-container input,
+.donor-form-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.donor-form-container button {
+  background-color: #ff4444;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.donor-form-container button:hover {
+  background-color: #e03232;
+}
+
+@media screen and (max-width: 768px) {
+  .donor-form-container {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+
+  .donor-form-container h2 {
+    font-size: 2rem;
+  }
+
+  .donor-form-container input,
+  .donor-form-container select {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .donor-form-container button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .nav-links a {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donor-form-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .donor-form-container {
+    padding: 20px;
+  }
+
+  .donor-form-container input,
+  .donor-form-container select {
+    font-size: 0.9rem;
+  }
+
+  .donor-form-container button {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    padding: 15px 10px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
